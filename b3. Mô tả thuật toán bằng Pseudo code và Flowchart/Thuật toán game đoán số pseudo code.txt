@@ -1,0 +1,9 @@
+Begin
+	N là số ngẫu nhiên từ máy tính
+	Nhập số A
+	If A=N
+		Display "Đúng"
+	Else
+		Display "Sai"
+	End If
+End
