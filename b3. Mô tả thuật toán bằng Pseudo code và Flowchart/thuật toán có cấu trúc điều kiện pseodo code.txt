@@ -1,0 +1,20 @@
+Begin
+	Input điểm
+	if điểm > 75 or điểm = 75
+	   Loại A
+	Else
+		If điểm > 60 or điểm = 45
+		   Loại B
+		Else
+			If điểm > 45 or điểm = 45
+			   Loại C
+			Else
+				If điểm > 35 or điểm = 35
+			   	   Loại D
+				Else
+				   Loại E
+				End IF
+			End IF
+		End IF
+	End IF
+End
