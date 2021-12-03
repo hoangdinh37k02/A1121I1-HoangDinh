@@ -1,0 +1,15 @@
+Begin
+	Input số lượng số trong dãy số N
+	Input a1,a2,...,an
+	i=1
+	While (i<=n)
+	Do
+		If a1>=ai
+			Display a1
+		Else
+			Display ai
+			ai=a1
+		End
+		i=i+1
+	End DO
+End
