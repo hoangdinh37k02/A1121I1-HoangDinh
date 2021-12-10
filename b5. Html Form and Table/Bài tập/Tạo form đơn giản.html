@@ -12,25 +12,56 @@
         </div>
 
         <div>
-            <p>Họ và tên</p>
+            <p style="display: inline-block">Họ và tên</p>
             <input id="name" type="text" name="Họ tên" placeholder="Your Name"> <br>
         </div>
 
         <div>
-            <p>Email</p>
+            <p style="display: inline-block">Email</p>
             <input id="email" type="text" name="Email" placeholder="Email"> <br>
         </div>
 
         <p>Sở thích</p>
-        <input type="checkbox" name="Hobby">Thể Thao</input>
-        <input type="checkbox" name="Hobby">Âm nhạc</input>
-        <input type="checkbox" name="Hobby">Đọc sách</input> <br>
-        <input type="checkbox" name="Hobby">Lướt web</input>
-        <input type="checkbox" name="Hobby">Chơi game</input>
-        <input type="checkbox" name="Hobby">Điện ảnh</input> <br>
-        <input type="checkbox" name="Hobby">Du lich</input> <br>
 
-        <div>
+        <table id="table">
+            <tr>
+                <td>
+                    <input type="checkbox" name="Hobby">Thể Thao</input>
+                </td>
+                <td>
+                    <input type="checkbox" name="Hobby">Âm nhạc</input>
+                </td>
+                <td>
+                    <input type="checkbox" name="Hobby">Đọc sách</input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="Hobby">Lướt web</input>
+                </td>
+                <td>
+                    <input type="checkbox" name="Hobby">Chơi game</input>
+                </td>
+                <td>
+                    <input type="checkbox" name="Hobby">Điện ảnh</input>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="Hobby">Du lich</input>
+                </td>
+            </tr>
+        </table>
+<!--        <input type="checkbox" name="Hobby">Thể Thao</input>-->
+<!--        <input type="checkbox" name="Hobby">Âm nhạc</input>-->
+<!--        <input type="checkbox" name="Hobby">Đọc sách</input> <br>-->
+<!--        <input type="checkbox" name="Hobby">Lướt web</input>-->
+<!--        <input type="checkbox" name="Hobby">Chơi game</input>-->
+<!--        <input type="checkbox" name="Hobby">Điện ảnh</input> <br>-->
+<!--        <input type="checkbox" name="Hobby">Du lich</input> <br>-->
+
+        <div id="bt">
             <input type="submit" name="submit" value="Gửi thông tin">
             <input type="reset" name="reset" value="Nhập lại">
         </div>

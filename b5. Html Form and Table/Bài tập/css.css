@@ -9,15 +9,15 @@ html {
 }
 
 #form {
-    height: 500px;
-    width: 300px;
+    height: 300px;
+    width: 700px;
 }
 
 
 #header {
     background-color: orangered;
     text-align: center;
-    color: #fff;
+
     text-transform: uppercase;
     height: 50px;
 }
@@ -25,4 +25,33 @@ html {
 #header p {
     height: 50px;
     line-height: 50px;
+    padding: 0;
+    color: #fff !important;
+}
+
+#name {
+    margin-left: 10px;
+}
+
+#email {
+    margin-left: 38.5px;
+}
+
+p {
+    margin-left: 50px;
+    padding: 5px;
+    color: blue;
+}
+
+#table {
+    margin-left: 150px;
+}
+
+#table td {
+    padding: 0px 8px;
+    color: orangered;
+}
+
+#bt {
+    margin-left: 140px;
 }
