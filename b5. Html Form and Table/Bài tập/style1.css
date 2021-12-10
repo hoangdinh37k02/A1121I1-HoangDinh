@@ -1,0 +1,51 @@
+body {
+    width: 700px;
+}
+
+.table {
+    /*border: solid 1px;*/
+    border-collapse: collapse;
+    width: 350px;
+    margin-left: 25px;
+
+}
+
+tr, td, th {
+    border: 1px solid;
+}
+
+th {
+    background-color: orange;
+}
+
+#h1 {
+    width: 400px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    color: blue;
+}
+
+
+.text1 {
+    color: blue;
+    margin-left: 20px;
+}
+
+.text2 {
+    color: blue;
+    float: right;
+    margin-right: 20px;
+}
+
+.table1 {
+    border-spacing: 0px;
+    width: 700px;
+}
