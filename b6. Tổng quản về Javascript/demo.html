@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 onclick="alert('Hello')">Click me</h1>
+    <button onclick="showalert()">alert</button>
+    <button onclick="showprompt()">Prompt</button>
+    <button onclick="showconfirm()">Confirm</button>
+
+    <script>
+        function showalert() {
+            alert('hello các bạn')
+        }
+
+        function showprompt() {
+            var name = prompt('Bạn ở tên gì')
+            alert('Chào bạn' + name)
+        }
+
+        function showconfirm() {
+            var check = confirm('Bạn ở Đà Nẵng phải ko?')
+            alert(check)
+        }
+    </script>
+</body>
+</html>
