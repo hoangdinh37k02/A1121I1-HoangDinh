@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="width: 530px">
+        <div style="width: 170px; float: left; margin-right: 10px">
+            <p style="text-align: center; font-weight: bold">Amount</p>
+            <input style="height: 25px; padding: 0px" id="amount" type="text" name="Amount">
+        </div>
+        <div style="width: 120px; float: left; margin-right: 10px">
+            <p style="text-align: center; font-weight: bold">From Currency</p>
+            <select style="width: 120px; height: 29px" name="From Currency">
+                <option value = "VN">Vietnam</option>
+
+            </select>
+        </div>
+        <div style="width: 120px; float: left; margin-right: 10px">
+            <p style="text-align: center; font-weight: bold">To Currency</p>
+            <select style="width: 120px; height: 29px" name="To Currency">
+                <option>USD</option>
+            </select>
+        </div>
+        <div style="width: 80px; float: left; margin-right: 10px; margin-top: 50px; line-height: 25px; color: cornflowerblue">
+            <input style="width: 80px; height: 29px; background-color: dodgerblue" onclick="convert()" type="submit" value="Convert">
+        </div>
+        <br>
+    <div id="result" style="color: dodgerblue"></div>
+
+    <script>
+        function convert() {
+            let num1 = parseInt(document.getElementById("amount").value);
+            let result = num1 / 23000;
+            document.getElementById("result").innerText = "Result : " + result + " USD";
+        }
+    </script>
+</body>
+</html>
