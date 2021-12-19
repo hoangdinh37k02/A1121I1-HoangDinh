@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p style="font-weight: bold; font-size: 30px">Thay đổi nội dung thẻ HTML</p>
+    <div style="background-color: blue; width: 500px; height: 50px">
+        <p id="change" style="margin-left: 10px; height: 50px; line-height: 50px; color: #ffffff">Hôm nay thời tiết thế nào?</p>
+    </div>
+    <br>
+    <button onclick="sunny()">Trời nắng</button>
+    <button onclick="rainy()">Trời mưa</button>
+
+    <script>
+        function sunny() {
+            document.getElementById("change").innerText = "Hôm nay trời nắng đẹp";
+        }
+        function rainy() {
+            document.getElementById("change").innerText = "Hôm nay trời mưa ngâu";
+        }
+    </script>
+</body>
+</html>
