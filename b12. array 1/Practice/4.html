@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = [1,-3,5,19,2,6,8,10,47,29];
+    let max;
+    for (i=1; i<x.length; i++) {
+        if (x[0] < x[i]) {
+            max = x[i];
+            x[0] = x[i];
+        } else {
+            max = x[0];
+        }
+    }
+    document.write(max);
+</script>
+</body>
+</html>
