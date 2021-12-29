@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="text">
+<input type="button" value="Check" onclick="translation">
+<p id="translation"></p>
+
+<script>
+    let arr1 = ["sách", "vở", "bút", "thước"];
+    let arr2 = ["book", "notebook", "pen", "ruler"];
+    // let a = prompt("input your word: ");
+    // let b = 1;
+    // for (let i=0; i<arr2.length; i++) {
+    //     if (a == arr2[i]) {
+    //         document.getElementById("translation").innerText = "Your word translated to vietnamese: " + arr1[i];
+    //         b=1;
+    //         break;
+    //     } else {
+    //         b = 2;
+    //     }
+    // }
+    // if (b == 2) {
+    //     alert("your word is not found");
+    // }
+
+    function translation() {
+        let a = document.getElementById("text").value;
+        let b = 1;
+        for (let i=0; i<arr2.length; i++) {
+            if (a == arr2[i]) {
+                document.getElementById("translation").innerHTML = arr1[i];
+            }
+        }
+    }
+</script>
+</body>
+</html>
