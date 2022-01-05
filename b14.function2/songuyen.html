@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPrime(number) {
+        let result;
+        let a;
+        for (let i=2; i<=number-1; i++) {
+            if (number % i == 0){
+                a = 1;
+                break;
+            } else {
+                a = 0;
+            }
+        }
+        if (a == 1) {
+            result = number + " không là số nguyên tố";
+        } else {
+            result = number + " là số nguyên tố";
+        }
+        return result;
+    }
+    let b = isPrime(83);
+    console.log(b)
+</script>
+</body>
+</html>
