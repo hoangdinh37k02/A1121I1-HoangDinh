@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function min1(a,b,c) {
+        let min2;
+        if (a<b) {
+            if (a<c) {
+                min2 = a;
+            } else {
+                min2=c;
+            }
+        } else if (b<c){
+            min2 = b;
+
+        } else {
+            min2 = c;
+        }
+        return min2;
+    }
+
+    console.log(min1(2,5,1));
+</script>
+</body>
+</html>

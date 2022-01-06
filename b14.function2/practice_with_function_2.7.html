@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = [];
+    function changeIndex(a,b) {
+        let temp = a;
+        a=b;
+        b=temp;
+        x[0]=a;
+        x[1]=b;
+        return x;
+    }
+    console.log(changeIndex(3,4));
+
+</script>
+</body>
+</html>
