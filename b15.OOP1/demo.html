@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // function Dienthoai(ten, hangSx) {
+    //     var ten = ten;
+    //     var hangSx = hangSx;
+    //
+    //     this.goiDien = function () {
+    //         document.write(ten + " đang goi dien <br>");
+    //     }
+    //
+    // }
+    // let dienThoai1 = new Dienthoai("Iphone13", "Apple");
+    // dienThoai1.goiDien();
+
+    class Dienthoai{
+        // constructor(ten, hangSx) {
+        //     this.ten = ten;
+        //     this.hangSx = hangSx;
+        //     }
+        constructor() {
+        }
+        goiDien() {
+            document.write(this.ten + " đang gọi điện <br>");
+            }
+        setTen(tenMoi) {
+            this.ten = tenMoi;
+        }
+        getTen() {
+            return this.ten;
+        }
+        }
+
+    let dienThoai1 = new Dienthoai();
+    dienThoai1.setTen("Samsung");
+    dienThoai1.goiDien();
+    console.log(dienThoai1.getTen());
+
+    // let dienThoai1 = new Dienthoai("Iphone13", "Apple");
+    // dienThoai1.goiDien();
+</script>
+</body>
+</html>
