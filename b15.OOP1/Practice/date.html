@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let MyDate = function(day, month, year) {
+    //     this.day = day;
+    //     this.month = month;
+    //     this.year = year;
+    //     this.getDay = function() {
+    //         return this.day;
+    //     }
+    //     this.getMonth = function() {
+    //         return this.month;
+    //     }
+    //     this.getYear = function() {
+    //         return this.year;
+    //     }
+    //     this.setDay = function(day) {
+    //         this.day  = day;
+    //     }
+    //     this.setMonth = function(month) {
+    //         this.month  = month;
+    //     }
+    //     this.setYear = function(year) {
+    //         this.year  = year;
+    //     }
+    // };
+    // let date = new MyDate();
+    // // let day = date.getDay();
+    // // let month = date.getMonth();
+    // // let year = date.getYear();
+    // // console.log(day + "/" + month + "/" + year);
+    // date.setDay(10);
+    // date.setMonth(10);
+    // date.setYear(2021);
+    // let day = date.getDay();
+    // let month = date.getMonth();
+    // let year = date.getYear();
+    // // console.log(date);
+    // console.log(day + "/" + month + "/" + year);
+
+    class date {
+        // constructor(day, month, year) {
+        //     this.day = day;
+        //     this.month = month;
+        //     this.year = year;
+        // }
+        constructor() {
+        }
+        setDay(day){
+            this.day = day;
+        }
+        setMonth(month){
+            this.month = month;
+        }
+        setYear(year){
+            this.year = year;
+        }
+        getDay(){
+            return this.day;
+        }
+        getMonth(){
+            return this.month;
+
+        }
+        getYear(){
+            return this.year;
+        }
+    }
+
+    // let myDate = new date(3, 2, 1999);
+    // console.log(myDate);
+
+    let myDate = new date();
+    myDate.setDay(10);
+    myDate.setMonth(12);
+    myDate.setYear(2021);
+    console.log(myDate.getDay() + "/" + myDate.getMonth() + "/" + myDate.getYear());
+</script>
+</body>
+</html>

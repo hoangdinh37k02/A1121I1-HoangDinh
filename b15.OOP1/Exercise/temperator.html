@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class temperature {
+        constructor(cecius) {
+            this.cecius = cecius;
+        }
+        getKevin() {
+            return this.cecius + 273;
+        }
+        getFahrenheit(){
+            return this.cecius*9/5 +32;
+        }
+    }
+    let transfer = new temperature(25);
+    console.log(transfer.getKevin());
+    console.log(transfer.getFahrenheit());
+</script>
+</body>
+</html>
