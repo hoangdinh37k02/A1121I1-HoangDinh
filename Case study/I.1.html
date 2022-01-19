@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--Bài 1: Vẽ hình chữ nhật rỗng chiều dài n và chiều rộng m theo hình dưới đây.
+Ví dụ: x = 4, y = 5
+* * * * *
+*       *
+*       *
+* * * * *
+-->
+<body>
+<script>
+    function drawRetangle(x,y) {
+        let result = "";
+        for (let i=1; i <= x; i++) {
+            for (j=1; j <= y; j++) {
+                if (i > 1 && i < x) {
+                    if (j == 1 || j == y) {
+                        result += "*";
+                    } else {
+                        result += "&nbsp;&nbsp;";
+                    }
+                } else {
+                    result += "*";
+                }
+                document.write(result);
+                result = "";
+            }
+            document.write("<br>");
+        }
+
+    }
+    let draw = drawRetangle(10,30);
+
+</script>
+</body>
+</html>

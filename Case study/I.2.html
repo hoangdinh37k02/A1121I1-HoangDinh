@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--Bài 2: Vẽ tam giác vuông cân rỗng có chiều cao h. Ví dụ: h = 5
+*
+* *
+*   *
+*     *
+* * * * *
+-->
+<body>
+<script>
+    function drawTriangle(h) {
+        let result = "";
+        for (let i=1; i<=h; i++){
+            for (j=1; j<=h; j++){
+                if (j>i) {
+                    result += "&nbsp;&nbsp;";
+                } else if (j>1 && j<i && i<h) {
+                    result += "&nbsp;&nbsp;";
+                } else {
+                    result += "*";
+                }
+                document.write(result);
+                result = "";
+            }
+            document.write("<br>");
+        }
+    }
+    let draw = drawTriangle(10);
+</script>
+</body>
+</html>

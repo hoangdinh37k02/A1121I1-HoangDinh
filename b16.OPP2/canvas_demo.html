@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<canvas id="myCanvas"></canvas>
+
+<script>
+    let canvas = document.getElementById("myCanvas");
+    let ctx = canvas.getContext("2d");
+
+    // ctx.beginPath();
+    // ctx.moveTo(10,10)
+    // ctx.lineTo(120,100);
+    // ctx.strokeStyle = 'blue';
+    // ctx.stroke();
+
+    // ctx.fillStyle = 'red';
+    // ctx.fillRect(100,100,100,50);
+
+    ctx.arc(50,50,30,0,Math.PI);
+    ctx.strokeStyle = 'red';
+    ctx.fillStyle = 'blue';
+    // ctx.stroke();
+    ctx.fill();
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập lương tính thuế</p>
+<input type="number" id="salary">
+<script>
+    function findVat(x) {
+        let vat;
+        if (x>=15) {
+            vat = 0.2*x;
+        } else if (x>=7) {
+            vat = 0.1*x;
+        } else {
+            vat = 0.5*x;
+        }
+        return vat;
+    }
+
+    let a = findVat(20);
+    document.write(a);
+</script>
+</body>
+</html>

@@ -52,23 +52,23 @@
     //     document.write("<br>");
     // }
 
-    // let result = "";
-    // for (j=1; j<=6; j++) {
-    //     for (i=1; i<=30; i++) {
-    //         if (j>=2 && j <=5) {
-    //             if (i==1 || i==30) {
-    //                 result+="*";
-    //             } else {
-    //                 result+="&nbsp;&nbsp;";
-    //             }
-    //         } else {
-    //             result += "*";
-    //         }
-    //         document.write(result);
-    //         result = "";
-    //     }
-    //     document.write("<br>");
-    // }
+    let result = "";
+    for (j=1; j<=6; j++) {
+        for (i=1; i<=30; i++) {
+            if (j>=2 && j <=5) {
+                if (i==1 || i==30) {
+                    result+="*";
+                } else {
+                    result+="&nbsp;&nbsp;";
+                }
+            } else {
+                result += "*";
+            }
+            document.write(result);
+            result = "";
+        }
+        document.write("<br>");
+    }
 
 
 </script>

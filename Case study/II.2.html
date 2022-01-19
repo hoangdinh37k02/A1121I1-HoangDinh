@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="name">
+<button onclick="check()">Check</button>
+<div id="show"></div>
+<script>
+    function check() {
+        let character = document.getElementById("name").value;
+        switch (character) {
+            case "u":
+            case "e":
+            case "o":
+            case "a":
+            case "i":
+            case "U":
+            case "E":
+            case "O":
+            case "A":
+            case "I":
+                document.getElementById("show").innerText = character + " là nguyên âm";
+                break;
+            default:
+                document.getElementById("show").innerText = character + " là phụ âm";
+        }
+    }
+</script>
+</body>
+</html>
