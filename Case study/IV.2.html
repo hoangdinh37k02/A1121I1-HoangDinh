@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = "abcdefedcbaaabtt";
+    let num = 0;
+    for (let i=0; i<str.length; i++) {
+        for (let j=i+1; j<str.length; j++) {
+            if (str[i] == str[j]) {
+                num +=1;
+                break;
+            }
+        }
+    }
+    console.log(str.length - num);
+    console.log(num);
+</script>
+</body>
+</html>

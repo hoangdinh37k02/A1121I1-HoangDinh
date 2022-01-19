@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = "abcde";
+    let str1 = "cdefghc";
+    let num = 0;
+    for (let i=0; i<str.length; i++) {
+        if (str1.indexOf(str[i]) != -1) {
+            num +=1;
+        }
+    }
+    console.log(num);
+</script>
+</body>
+</html>

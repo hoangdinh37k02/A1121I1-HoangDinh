@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>Input your name</p>
+    <input type="text" id="name">
+    <input type="button" value="check" onclick="convert()">
+    <div id="show"></div>
+    <script>
+        function convert() {
+            let name = document.getElementById("name").value;
+            for (let i=0; i<name.length; i++) {
+                if (name[i] == " " && name[i+1] == " ") {
+                    name.slice(name[i],name[i+1]);
+                }
+                name[i].toLowerCase();
+            }
+            // name.toLowerCase();
+            // for (let j=1; j<name.length; j++) {
+            //     if (name[j-1] == " ") {
+            //         name[j].toUpperCase();
+            //     }
+            // }
+            document.getElementById("show").innerText = name;
+        }
+        // chưa hoàn thành
+
+    </script>
+
+
+</body>
+</html>
