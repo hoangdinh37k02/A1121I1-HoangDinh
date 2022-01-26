@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--Bài 2: Viết hàm liệt kê các số nguyên tố trong mảng 2 chiều, đếm các số nguyên tố có trong mảng đó.-->
+<body>
+<script>
+    let myArr = [
+        [5,9,3,43],
+        [3,3,67,213,3,3,34],
+        [7,11,312,21,54,8],
+    ];
+    function isPrime(num) {
+        for (let i=2; i<num; i++) {
+            if (num % i == 0) {
+                return false;
+            }
+            return true;
+        }
+    }
+    // let quantity = 0;
+    // for (let row=0; row<myArr.length; row++) {
+    //     for (let j=0; j<myArr[row].length; j++) {
+    //         if (isPrime(myArr[row][j])) {
+    //             document.write(myArr[row][j] + "<br>");
+    //             quantity +=1;
+    //         }
+    //     }
+    // }
+    // document.write("Tổng số nguyên tố có trong mảng 2 chiều là: " + quantity);
+    console.log(isPrime(9));
+</script>
+</body>
+</html>
